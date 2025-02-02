@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /* Centering the video */
+        .video-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Align vertically */
+            width: 300;
+            height: 200; /* Set the height of the video container */
+            padding-top: 2vh; /* Adjust spacing from top if needed */
+        }
+
+        video {
+            width: 300; /* Adjust size as needed */
+            max-width: 1200px; /* Max width for large screens */
+            height: 200;
+            background-color: black;
+        }
+
+        p {
+            font-size: 1.25rem;
+            text-align: center;
+            color: #e8637b;
+            margin-top: 2vh;
+        }
+
+        /* Styling the Links Section */
+        .back-link ul {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping if the links overflow */
+            gap: 20px; /* Space between the links */
+            list-style-type: none; /* Remove bullets from list */
+            padding: 2vw;
+            justify-content: center; /* Center the links */
+            margin-top: 3vh;
+        }
+
+        .back-link li {
+            flex: 0 1 30%; /* Adjust the width of each link */
+            margin-bottom: 10px; /* Space between rows */
+        }
+
+        .back-link a {
+            text-decoration: none; /* Remove underline from links */
+            color: #b063e8; /* Link color */
+            font-size: 1.1rem;
+            padding-bottom: 2px;
+        }
+
+        .back-link a:hover {
+            color: #0056b3; /* Change color on hover */
+        }
+
+        /* Footer styling */
+        footer {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(238, 231, 231);
+            padding: 2vw;
+            color: rgb(90, 4, 97);
+            margin-top: 2vh;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            .video-container {
+                height: 40vh; /* Adjust the video container height */
+            }
+
+            .back-link ul {
+                padding: 5vw;
+            }
+
+            .back-link li {
+                flex: 0 1 45%; /* Adjust the width of links on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-container {
+                height: 30vh; /* Adjust the video container height */
+            }
+
+            .back-link li {
+                flex: 0 1 100%; /* Make each link take up the full width on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video src="prabhas.mp4" controls muted autoplay loop></video>
+    </div>
+    
+    <p>World of Dino</p>
+    
+    <div class="back-link">
+        <ul>
+            <li><a href="https://youtu.be/qIJQlDLQKJg?si=OLTzFubCdr8h5BgR">Salaar</a></li>
+            <li><a href="https://youtu.be/4GPvYMKtrtI?si=HvidbPpRGsXZMfE7">CoalMine Scene</a></li>
+            <li><a href="https://youtu.be/b0fPciW_uco?si=arpaqXvem5fi2hc6">Kateramma Fight Scene</a></li>
+            <li><a href="https://youtu.be/y1-w1kUGuz8?si=lxUekNAXAA6hJ2MT">Kalki trailer</a></li>
+            <li><a href="https://youtu.be/PwxHvnK_sA0?si=-v3v6yutsXX4Zv8I">Tatto Scene</a></li>
+            <li><a href="https://youtu.be/Tu3b55leFO4?si=udhzsZSDG3a8HxVF">Tribute</a></li>
+            <li><a href="https://youtu.be/kMV-lxonGi0?si=gjoAUtvLcy-TIpOI">Mr. Perfect Movie</a></li>
+            <li><a href="https://youtu.be/wYtL_ZcTF4w?si=1b4h0QJFiD5LBbw7">Salaar interval Scene</a></li>
+            <li><a href="https://youtu.be/qIJQlDLQKJg?si=7Aku9TOvXS1DBLdk">Chatrapathi movie Scene</a></li>
+            <li><a href="https://youtu.be/kvsDFnuSw0A?si=0KAmdNxQs-Vr35yE">Chatrapathi Promotions</a></li>
+            <li><a href="https://youtu.be/mUDZdBop9gU?si=wClG2XjibeQbWSgk">Radheshym trailer</a></li>
+        </ul>
+    </div>
+
+    <div class="back-link">
+        <a href="index.html">Back to Main Page</a>
+    </div>
+
+    <footer>Click the link above to return to the main page</footer>
+</body>
+</html>

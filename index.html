@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>* REBEL STAR * </title>
+    <style>
+        /* Base styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ede4373a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Adjust so that content starts from the top */
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 5vw;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(81, 22, 72);
+            margin-top: 3vh; /* Position from the top */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 40vh; /* Make image responsive with a max height */
+            object-fit: contain; /* Prevent image distortion */
+            margin-top: 2vh; /* Space from top */
+        }
+
+        p {
+            font-size: 2vw;
+            color: rgb(90, 4, 97);
+            background-color: rgb(238, 231, 231);
+            text-align: center;
+            margin-top: 1vh; /* Adds space between the image and text */
+        }
+
+        .bio {
+            font-size: 2vw;
+            text-align: center;
+            margin-top: 2vh;
+            width: 80%;
+            max-width: 900px; /* Max width to avoid it becoming too wide */
+        }
+
+        .links {
+            margin-top: 2vh;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: rgb(50, 11, 109);
+            font-weight: bold;
+            margin: 0 1vw;
+        }
+
+        .links a:hover {
+            color: rgb(74, 31, 109);
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(238, 231, 231);
+            padding: 2vw;
+            color: rgb(90, 4, 97);
+            margin-top: 2vh; /* Adds space after the links */
+        }
+
+        /* Ensure consistency across different screen sizes */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 8vw; /* Make heading slightly bigger for small screens */
+            }
+
+            p, .bio {
+                font-size: 4vw;
+            }
+
+            .links a {
+                font-size: 4vw;
+                display: block; /* Stack links vertically on smaller screens */
+                margin: 1vh 0;
+            }
+
+            footer {
+                padding: 3vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WELCOME TO REBELWOOD</h1>
+
+    <img src="https://i.pinimg.com/736x/90/a2/29/90a22904e7d4e0bdf21f1869f6bfa049.jpg" alt="The Dinosaur">
+
+    <p>Uppalapati Venkata</p>
+    <p>Suryanarayana Prabhas Raju</p>
+
+    <p class="bio">
+        Uppalapati Venkata Suryanarayana Prabhas Raju born 23 October 1979, known mononymously as Prabhas, is an Indian actor who predominantly works in Telugu cinema. He is one of the highest-paid actors in Indian cinema and has been featured in Forbes India's Celebrity 100 list since 2015. Referred to in the media as the "Rebel Star," he has appeared in over 20 films and has received seven Filmfare Awards nominations, a Nandi Award, and a SIIMA Award.
+    </p>
+
+    <!-- Links Section -->
+    <div class="links">
+        <a href="early-life.html">Early Life</a>
+        <a href="movies.html">Movies list</a>
+        <a href="viedos.html">Viedos</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>Click the links for more information about Prabhas</footer>
+
+</body>
+
+</html>
